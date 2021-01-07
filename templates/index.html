@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Templates 101</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Jumbotron -->
+        <div class="jumbotron text-center">
+            <h1>Mission to Mars</h1>
+            <h3>{{news_title_html}}</h3>
+            <h3>{{list_of_dicts_html}}</h3>
+            <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+        </div>
+
+        <div class="row" id="mars_info">
+            <h1>Latest Mars News</h1>
+            <h3>{{news_title_html}}</h3>
+            <h3>{{list_of_dicts_html}}</h3>
+        </div>
+
+    </div>
+
+    <!-- Craigslist Listings -->
+    <div class="row" id="craiglist-listings">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Date Posted</th>
+                        <th scope="col">Headline</th>
+                        <th scope="col">Neighborhood</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <!-- Within the table body, create a new table row (<tr>) for each 
+              player in our database. -->
+                    {% for listing in listing_results %}
+                    <tr>
+                        <td>{{ listing.date }}</td>
+                        <td>{{ listing.headline }}</td>
+                        <td>{{ listing.hood }}</td>
+                        <td>{{ listing.price }}</td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
