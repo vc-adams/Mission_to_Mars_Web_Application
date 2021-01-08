@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+
+img{
+   width:700px;
+   height: 500px;
+}   
+
+h1{
+    color: white;
+    font-size: 200;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: white;
+}
+
+h5{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+/* th{
+    color: white;
+}
+
+td{
+    color: white;
+} */
+
+table{
+    color: white;
+}
+
+.jumbotron{
+color: #FFFFFF;
+background-color: rgb(57, 57, 57);
+}
