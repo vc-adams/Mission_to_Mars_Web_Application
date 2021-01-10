@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mission to Mars</title>
+    <!-- Link to the Style Sheet for a Jumbotron  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Link to the CSS Style Sheet  -->
+    <link rel="stylesheet" type="text/css" href="../static/style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Jumbotron -->
+        <!-- https://stackoverflow.com/questions/22904102/how-to-change-the-background-color-of-jumbrotron -->
+        <div class="jumbotron text-center">
+            <h1>Mission to Mars</h1>
+
+            <a class="btn btn-light btn-lg" href="/scrape" role="button">Scrape New Data</a>
+        </div>
+
+        <br>
+
+        <!-- Lastest Mars News -->
+        <div class="Lastest Mars News">
+
+            <!-- Header-Lastest Mars News -->
+            <div class="row" id="Header-Lastest Mars News">
+                <h2>Latest Mars News</h2>
+            </div>
+
+            <!-- Title-Lastest Mars News -->
+            <div class="row" id="Title-Lastest Mars News">
+                <h3>{{list_of_dicts_html.latest_news_title}}</h3>
+            </div>
+
+            <!-- Paragraph-Lastest Mars News -->
+            <div class="row" id="Paragraph-Lastest Mars News">
+                <p>{{list_of_dicts_html.latest_news_paragraph}}</p>
+            </div>
+
+        </div>
+
+
+        <br>
+        <hr>
+        <br>
+
+        <!-- Featured Mars Image and Mars Facts -->
+        <div class="row" id="Mars Image and Mars Facts">
+
+            <!-- Featured Mars Image -->
+            <div class="col-md-8" id="Mars Image">
+
+                <h2>Featured Mars Image</h2>
+                <article>
+                    <a href={{list_of_dicts_html.featured_image_url}} target="_blank">
+                        <img id="img" src={{list_of_dicts_html.featured_image_url}} alt="Featured Mars Image">
+                    </a>
+                </article>
+            </div>
+
+            <!-- Featured Mars Facts -->
+            <div class="col-md-4" id="Mars Facts">
+                <h5>Mars Facts</h5>
+                {{list_of_dicts_html.facts_table_html | safe}}
+            </div>
+        </div>
+
+
+        <br>
+        <hr>
+        <br>
+
+
+        <div class="row" id="Mars Hemispheres">
+
+            <div class="col-md-12" id="Mars Hemispheres 1">
+                <h2>Mars Hemispheres</h2>
+            </div>
+
+            <div class="col-md-6" id="Mars Hemispheres 1">
+                <h4>{{list_of_dicts_html.hemisphere_name_1}}</h4>
+                <article>
+                    <a href={{list_of_dicts_html.hemisphere_url_1}} target="_blank">
+                        <img id="img" src={{list_of_dicts_html.hemisphere_url_1}} alt="Featured Mars Image"
+                            class="Hemispheres">
+                    </a>
+                </article>
+            </div>
+
+
+            <div class="col-md-6" id="Mars Hemispheres 2">
+                <h4>{{list_of_dicts_html.hemisphere_name_2}}</h4>
+                <article>
+                    <a href={{list_of_dicts_html.hemisphere_url_2}} target="_blank">
+                        <img id="img" src={{list_of_dicts_html.hemisphere_url_2}} alt="Featured Mars Image"
+                            class="Hemispheres">
+                    </a>
+                </article>
+                <br>
+                <br>
+            </div>
+
+
+
+            <div class="col-md-6" id="Mars Hemispheres 3">
+                <h4>{{list_of_dicts_html.hemisphere_name_3}}</h4>
+                <article>
+                    <a href={{list_of_dicts_html.hemisphere_url_3}} target="_blank">
+                        <img id="img" src={{list_of_dicts_html.hemisphere_url_3}} alt="Featured Mars Image"
+                            class="Hemispheres">
+                    </a>
+                </article>
+            </div>
+
+            <div class="col-md-6" id="Mars Hemispheres 4">
+                <h4>{{list_of_dicts_html.hemisphere_name_4}}</h4>
+                <article>
+                    <a href={{list_of_dicts_html.hemisphere_url_4}} target="_blank">
+                        <img id="img" src={{list_of_dicts_html.hemisphere_url_4}} alt="Featured Mars Image"
+                            class="Hemispheres">
+                    </a>
+                </article>
+            </div>
+
+        </div>
+</body>
+
+</html>

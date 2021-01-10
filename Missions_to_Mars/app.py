@@ -74,7 +74,7 @@ def scraper():
     # news_title = "From the NASA Mars Webpage:"
     # list_of_dicts = scrape_mars_test.scrape()
 
-    return render_template("index.html", list_of_dicts_html=listings_data)
+    return render_template("scrape.html", list_of_dicts_html=listings_data)
 
 
 if __name__ == "__main__":

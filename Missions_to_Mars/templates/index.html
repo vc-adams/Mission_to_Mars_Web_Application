@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- Link to the CSS Style Sheet  -->
     <link rel="stylesheet" type="text/css" href="../static/style/style.css">
+
 </head>
 
 <body>
@@ -17,168 +18,10 @@
         <!-- https://stackoverflow.com/questions/22904102/how-to-change-the-background-color-of-jumbrotron -->
         <div class="jumbotron text-center">
             <h1>Mission to Mars</h1>
+
             <a class="btn btn-light btn-lg" href="/scrape" role="button">Scrape New Data</a>
         </div>
-
-        <br>
-
-        <!-- Lastest Mars News -->
-        <div class="Lastest Mars News">
-
-            <!-- Header-Lastest Mars News -->
-            <div class="row" id="Header-Lastest Mars News">
-                <h2>Latest Mars News</h2>
-            </div>
-
-            <!-- Title-Lastest Mars News -->
-            <div class="row" id="Title-Lastest Mars News">
-                <!-- <h3>{{news_title_html}}</h3> -->
-                <h3>A Martian Roundtrip: NASA's Perseverance Rover Sample Tubes</h3>
-            </div>
-
-            <!-- Paragraph-Lastest Mars News -->
-            <div class="row" id="Paragraph-Lastest Mars News">
-                <p>{{list_of_dicts_html}}</p>
-                <p>Marvels of engineering, the rover's sample tubes must be tough enough to safely bring Red Planet
-                    samples on the long journey back to Earth in immaculate condition.</p>
-            </div>
-
-        </div>
-
-
-        <br>
-        <hr>
-        <br>
-
-        <!-- Featured Mars Image and Mars Facts -->
-        <div class="row" id="Mars Image and Mars Facts">
-
-            <!-- Featured Mars Image -->
-            <div class="col-md-8" id="Mars Image">
-
-                <h2>Featured Mars Image</h2>
-                <article>
-                    <a href="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14400_hires.jpg" target="_blank">
-                        <img id="img" src=https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14400_hires.jpg
-                            alt="Featured Mars Image">
-                    </a>
-                </article>
-            </div>
-
-            <!-- Featured Mars Image -->
-            <div class="col-md-4" id="Mars Facts">
-                <h5>Mars Facts</h5>
-                <!-- <table class="table">
-                    <!-- Table Header -->
-                <!-- <thead> -->
-                <!-- <tr> -->
-                <!-- <th scope="col"></th> -->
-                <!-- <th scope="col">Mars</th> -->
-                <!-- </tr> -->
-                <!-- </thead> -->
-                <!-- Table Body -->
-                <!-- <tbody> -->
-
-                <!-- Within the table body, create a new table row (<tr>) for each player in our database. -->
-                <!-- {% for listing in listing_results %} -->
-                <!-- Row One Table  -->
-                <!-- <tr> -->
-                <!-- <td>Description</td> -->
-                <!-- <td></td> -->
-                <!-- <td>{{ listing.date }}</td>
-                            <td>{{ listing.headline }}</td> -->
-                <!-- </tr> -->
-                <!-- <tr> -->
-                <!-- <td>Diameter:</td> -->
-                <!-- <td>6,792 km</td> -->
-                <!-- <td>{{ listing.date }}</td>
-                             <td>{{ listing.headline }}</td> -->
-                <!-- </tr> -->
-                <!-- {% endfor %} -->
-
-                <!-- </tbody> -->
-                <!-- </table> --> -->
-
-
-                <table border="1" class="dataframe">\n <thead>\n <tr style="text-align: right;">\n <th></th>\n <th>Mars
-                            </th>\n </tr>\n
-                        <tr>\n <th></th>\n <th></th>\n </tr>\n
-                    </thead>\n <tbody>\n <tr>\n <th>Equatorial Diameter:</th>\n <td>6,792 km
-                            </td>\n </tr>\n <tr>\n <th>Polar Diameter:</th>\n <td>6,752 km</td>\n </tr>\n <tr>\n <th>
-                                Mass:</th>\n <td>
-                                6.39 × 10^23 kg (0.11 Earths)</td>\n </tr>\n <tr>\n <th>Moons:</th>\n <td>2 (Phobos
-                                &amp; Deimos)</td>\n
-                        </tr>\n <tr>\n <th>Orbit Distance:</th>\n <td>227,943,824 km (1.38 AU)</td>\n </tr>\n <tr>\n
-                            <th>Orbit Period:
-                            </th>\n <td>687 days (1.9 years)</td>\n
-                        </tr>\n <tr>\n <th>Surface Temperature:</th>\n <td>
-                                -87 to -5 °C</td>
-                            \n </tr>\n <tr>\n <th>First Record:</th>\n <td>2nd millennium BC</td>\n </tr>\n <tr>\n <th>
-                                Recorded By:</th>
-                            \n <td>Egyptian astronomers</td>\n </tr>\n </tbody>\n</table>
-
-
-            </div>
-        </div>
-
-
-        <br>
-        <hr>
-        <br>
-
-
-        <div class="row" id="Mars Hemispheres">
-
-            <div class="col-md-12" id="Mars Hemispheres 1">
-                <h2>Mars Hemispheres</h2>
-            </div>
-
-            <div class="col-md-6" id="Mars Hemispheres 1">
-                <h4>Mars Hemispheres 1</h4>
-                <article>
-                    <a href="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14400_hires.jpg" target="_blank">
-                        <img id="img" src=https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14400_hires.jpg
-                            alt="Featured Mars Image" class="Hemispheres">
-                    </a>
-                </article>
-            </div>
-
-
-            <div class="col-md-6" id="Mars Hemispheres 2">
-                <h4>Mars Hemispheres 2</h4>
-                <article>
-                    <a href="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14400_hires.jpg" target="_blank">
-                        <img id="img" src=https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14400_hires.jpg
-                            alt="Featured Mars Image" class="Hemispheres">
-                    </a>
-                </article>
-                <br>
-                <br>
-            </div>
-
-
-
-            <div class="col-md-6" id="Mars Hemispheres 3">
-                <h4>Mars Hemispheres 3</h4>
-                <article>
-                    <a href="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14400_hires.jpg" target="_blank">
-                        <img id="img" src=https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14400_hires.jpg
-                            alt="Featured Mars Image" class="Hemispheres">
-                    </a>
-                </article>
-            </div>
-
-            <div class="col-md-6" id="Mars Hemispheres 4">
-                <h4>Mars Hemispheres 4</h4>
-                <article>
-                    <a href="https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14400_hires.jpg" target="_blank">
-                        <img id="img" src=https://www.jpl.nasa.gov/spaceimages/images/largesize/PIA14400_hires.jpg
-                            alt="Featured Mars Image" class="Hemispheres">
-                    </a>
-                </article>
-            </div>
-
-        </div>
+    </div>
 </body>
 
 </html>
