@@ -4,8 +4,19 @@ body{
 
 img{
    width:700px;
-   height: 500px;
-}   
+   height: 600px;
+
+   border: 3px;
+   border-style: solid;
+   border-color:rgb(57, 57, 57);
+
+   padding: 4%;
+   margin-left: 4%;
+}
+.Hemispheres{
+    width: 500px;
+    height: 400px;
+}
 
 h1{
     color: white;
@@ -13,19 +24,23 @@ h1{
 }
 
 h2{
-    color: white;
+    color: rgb(200, 200, 200);
 }
 
 h3{
-    color: white;
+    color: rgb(175, 175, 175);
+}
+
+h4{
+    color: rgb(150, 150, 150);
 }
 
 h5{
-    color: white;
+    color: rgb(200, 200, 200);
 }
 
 p{
-    color: white;
+    color: rgb(100, 100, 100);
 }
 
 /* th{
@@ -37,10 +52,11 @@ td{
 } */
 
 table{
-    color: white;
+    color: rgb(100, 100, 100);
 }
 
 .jumbotron{
 color: #FFFFFF;
 background-color: rgb(57, 57, 57);
 }
+
