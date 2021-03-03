@@ -8,15 +8,48 @@ In this assignment, I built a web application that scrapes various websites for 
 4) Collected high resolution images for each of Mar's hemispheres from https://space-facts.com/mars/. 
 5) Created a NoSQL database in MongoDB with a Flask application to create a new HTML page with the scraped data and images from above.
 
-## Getting Started
+
+## How to Deploy the Web Application on Your Local Computer
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
-
 What things you need to install the software and how to install them
 
-Give examples
+The web applicaiton was built using Python 3.7.6.
+  - https://www.python.org/downloads/
+
+Python Library Requirements:  
+- PyMongo
+  - https://docs.mongodb.com/drivers/pymongo/
+  - https://pypi.org/project/pymongo/
+- DateTime
+  - https://pypi.org/project/DateTime/
+- Request
+  - https://pypi.org/project/requests/
+- Datefinder
+  - https://pypi.org/project/datefinder/
+- Pandas
+  - https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html
+  - https://data-flair.training/blogs/install-pandas-on-windows/
+  - https://stackoverflow.com/questions/13249135/installing-pandas-on-mac-osx
+- Splinter
+  - https://splinter.readthedocs.io/en/latest/install.html
+- Beautifulsoup4
+  - https://pypi.org/project/beautifulsoup4/
+- Google Chrome Driver
+  - https://pypi.org/project/chromedriver-py/
+
+
+In a terminal type the following:
+pip install pymongo [press ENTER]
+pip install DateTime [press ENTER]
+pip install requests [press ENTER]
+pip install datefinder [press ENTER]
+pip install splinter [press ENTER]
+pip install beautifulsoup4 [press ENTER]
+pip install chromedriver-py [press ENTER]
+
 
 ### Installing
 
