@@ -16,6 +16,9 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 What things you need to install the software and how to install them
 
+The web applicaiton was built using MongoDB Compass Version 1.25.0
+  - https://www.mongodb.com/try/download/compass
+
 The web applicaiton was built using Python 3.7.6.
   - https://www.python.org/downloads/
 
@@ -40,32 +43,48 @@ Python Library Requirements:
 - Google Chrome Driver
   - https://pypi.org/project/chromedriver-py/
 
+### Installing the Prerequisites
 
-In a terminal type the following:
-pip install pymongo [press ENTER]
-pip install DateTime [press ENTER]
-pip install requests [press ENTER]
-pip install datefinder [press ENTER]
-pip install splinter [press ENTER]
-pip install beautifulsoup4 [press ENTER]
-pip install chromedriver-py [press ENTER]
+Step 1: Download MongoDB Compass from the following website:
+  - https://www.mongodb.com/try/download/compass
 
+Step 2: Open a terminal
+  - Mac: 
+    - Click the Launchpad icon in the Dock, type "Terminal" in the search field, then click the Terminal icon.
+                OR
+    - In the Finder, open the /Application/Utilities folder, then double-click Terminal. 
+  - Windows: 
+    - Click the Start ans search for "Command Prompt", then click the Command Prompt. 
+                OR 
+    - Press Ctrl + r on your keyboard, type "cmd" and then click OK. 
 
-### Installing
+Step 3: In a terminal type the following:
 
-A step by step series of examples that tell you how to get a development env running
+  - pip install pymongo [press ENTER] ...wait for the download to complete
+  - pip install DateTime [press ENTER] ...wait for the download to complete
+  - pip install requests [press ENTER] ...wait for the download to complete
+  - pip install datefinder [press ENTER] ...wait for the download to complete
+  - pip install splinter [press ENTER] ...wait for the download to complete
+  - pip install beautifulsoup4 [press ENTER] ...wait for the download to complete
+  - pip install chromedriver-py [press ENTER] ...wait for the download to complete
 
-Say what the step will be
+## Running the Web Application 
 
-Give the example
-And repeat
+Step 1: Open 2 terminals (Repeat the instructions twice)
+  - Mac: 
+    - Click the Launchpad icon in the Dock, type "Terminal" in the search field, then click the Terminal icon.
+                OR
+    - In the Finder, open the /Application/Utilities folder, then double-click Terminal. 
+  - Windows: 
+    - Click the Start ans search for "Command Prompt", then click the Command Prompt. 
+                OR 
+    - Press Ctrl + r on your keyboard, type "cmd" and then click OK. 
 
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+Step 2: In the first terminal type the following:
+  - brew services start mongodb-community@4.4 [press ENTER] ...wait for the Homebrew to start up Mongodb
 
-## Running the tests
-
-Explain how to run the automated tests for this system
+Step 3: In the second terminal type the following:
+  - mongo [press ENTER] ...wait for the your computer to connect to Mongodb
 
 ### Break down into end to end tests
 
