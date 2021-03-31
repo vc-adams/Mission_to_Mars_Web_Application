@@ -119,48 +119,15 @@ Step 5: Start the Application:
   - The following page should come up:
 ![image](https://user-images.githubusercontent.com/67811128/113222942-b6af2200-924d-11eb-921f-2c75d8e63396.png)
 
+Step 6: Run the Application:
+  - Click the "Scrape New Data" button on the page. Another Google Chrome window will open, it will automatically move through the pages it is scraping information from. When the application is done scraping the data it will close. 
 
-### Break down into end to end tests
 
-Explain what these tests test and why
+## Author
 
-Give an example
+Vincent Adams 
 
-### And coding style tests
-
-Explain what these tests test and why
-
-Give an example
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-
-## Contributing
-
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use SemVer for versioning. For the versions available, see the tags on this repository.
-
-## Authors
-
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
-Hat tip to anyone whose code was used
-Inspiration
-etc
+Thank you to my instructor Christopher Caudill and the TAs of the class: Justin Parker, Elsa Schieffelin, Matt Hawley, and Charles Dixon.
