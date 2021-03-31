@@ -43,6 +43,7 @@ Python Library Requirements:
 - Google Chrome Driver
   - https://pypi.org/project/chromedriver-py/
 
+
 ### Installing the Prerequisites
 
 Step 1: Download MongoDB Compass from the following website:
@@ -68,9 +69,12 @@ Step 3: In a terminal type the following:
   - pip install beautifulsoup4 [press ENTER] ...wait for the download to complete
   - pip install chromedriver-py [press ENTER] ...wait for the download to complete
 
-## Running the Web Application 
+Step 4: Close the terminal window
 
-Step 1: Open 2 terminals (Repeat the instructions twice)
+
+### Running the Web Application 
+
+Step 1: Open 3 terminals (Repeat the instructions three times)
   - Mac: 
     - Click the Launchpad icon in the Dock, type "Terminal" in the search field, then click the Terminal icon.
                 OR
@@ -80,11 +84,41 @@ Step 1: Open 2 terminals (Repeat the instructions twice)
                 OR 
     - Press Ctrl + r on your keyboard, type "cmd" and then click OK. 
 
-Step 2: In the first terminal type the following:
-  - brew services start mongodb-community@4.4 [press ENTER] ...wait for the Homebrew to start up Mongodb
+Step 2: Start the MongoDB
+  Step 2.1: In the first terminal type the following:
+    - brew services start mongodb-community@4.4 [press ENTER] ...wait for the Homebrew to start up Mongodb
+      
+  Step 2.2: In the second terminal type the following:
+    - mongo [press ENTER] ...wait for the your computer to connect to Mongodb
 
-Step 3: In the second terminal type the following:
-  - mongo [press ENTER] ...wait for the your computer to connect to Mongodb
+Step 3: Copy the "Mission_to_Mars" folder onto your hard drive:
+  
+Step 4: Start the Development Server:
+  Step 4.1: In the thrid terminal map to the "Mission_to_Mars" folder you just saved to you computer and go into the folder
+    - E.g. "cd Downloads/Mission_to_Mars" [press ENTER]
+
+  Step 4.2: In the thrid terminal type the following:
+    - python app.py [press ENTER] ...wait for the development server to start
+      - You should see the following:
+        -  * Serving Flask app "app" (lazy loading)
+           * Environment: production
+             WARNING: This is a development server. Do not use it in a production deployment.
+             Use a production WSGI server instead.
+           * Debug mode: on
+           * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+           * Restarting with fsevents reloader
+           * Debugger is active!
+           * Debugger PIN: ###-###-###
+
+Step 5: Start the Application:
+  - Open web browser Google Chrome
+  - In the address bar of web browser type the following:
+    - http://localhost:5000/ [press ENTER]
+              or
+    - http://127.0.0.1:5000/ [press ENTER]
+  - The following page should come up:
+![image](https://user-images.githubusercontent.com/67811128/113222942-b6af2200-924d-11eb-921f-2c75d8e63396.png)
+
 
 ### Break down into end to end tests
 
