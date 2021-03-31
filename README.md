@@ -120,7 +120,10 @@ Step 5: Start the Application:
 ![image](https://user-images.githubusercontent.com/67811128/113222942-b6af2200-924d-11eb-921f-2c75d8e63396.png)
 
 Step 6: Run the Application:
-  - Click the "Scrape New Data" button on the page. Another Google Chrome window will open, it will automatically move through the pages it is scraping information from. When the application is done scraping the data it will close. 
+  - Click the "Scrape New Data" button on the page. Another Google Chrome window will open, it will automatically move through the pages it is scraping information from. When the application is done scraping the data it will close and the original Google Chrome window will display the scraped information, see images below.
+![Screen Shot 2021-01-10 at 5 08 00 PM](https://user-images.githubusercontent.com/67811128/113223853-b7e14e80-924f-11eb-8477-8d28a100bd30.png)
+![Screen Shot 2021-01-10 at 5 08 27 PM](https://user-images.githubusercontent.com/67811128/113223859-ba43a880-924f-11eb-93be-4da180696955.png)
+
 
 
 ## Author
